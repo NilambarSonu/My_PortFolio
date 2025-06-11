@@ -14,10 +14,10 @@
     <div id ="header">
       <div class="container">
         <nav>
-          <img class="logo" src="Images/MARTIN_X_logo.png" alt="MARTIN_X Logo">
+          <img class="logo" src="Images/maertinx-logo-trans.png" alt="MARTIN_X Logo">
           <ul>
-            <li><a class="corner" href="#home">Home</a></li>
-            <li><a class="corner" href="#about">About</a></li>
+            <li><a class="corner a" href="#home">Home</a></li>
+            <li><a class="corner a" href="#about">About</a></li>
             <li><a class="corner" href="#projects">Projects</a></li>
             <li><a class="corner" href="#contact">Contact</a></li>
           </ul>
@@ -25,7 +25,7 @@
         <div class="description">
          
           <h1 class="text1">Hi, I'm <a class="text1-1">Nilambar </a>Behera From Odisha, <a class="text1-2">India</a></h1>
-          <p class=" text2">"A dedicated and hardworking individual who believes in the power of consistency and continuous learning. With a strong passion for technology and self-growth, I strive to push my limits every day and turn challenges into opportunities. Success doesn't come overnight—it's built through effort, patience, and never giving up"</p>
+          <p class=" text2">"A dedicated and hardworking individual who believes in the power of consistency and continuous learning. With a strong passion for technology and self-growth, I strive to push my limits every day and turn challenges into opportunities. Success doesn't come overnight-it's built through effort, patience, and never giving up"</p>
           
           </div>
           </div>
@@ -44,9 +44,9 @@
               I am a BCA student with a passion for data science and web development. I have completed certifications like "Python for Data Science and AI" by IBM, which has equipped me with the skills to analyze data and build web applications. I enjoy working on real-world projects using Python, HTML, CSS, and JavaScript. My goal is to become a data scientist in the future, and I am continuously learning and improving my skills to achieve that.
             </p>
             <div class="tabs">
-              <p class="tab-links ative-link" onclick="openTab('skills')">Skills</p>
-              <p class="tab-links" onclick="openTab('experience')">Experience</p>
-              <p class="tab-links" onclick="openTab('education')">Education</p>
+              <button class="tab-links active-link" onclick="openTab('skills')">Skills</button>
+              <button class="tab-links a" onclick="openTab('experience')">Experience</button>
+              <button class="tab-links a" onclick="openTab('education')">Education</button>
             </div>
             <div class="tab-content active-tab" id="skills">
               <ul>
@@ -144,7 +144,7 @@
       <div id="container">
         <div class="row2">
           <div class="row2-c1">
-            <img class="meow-img" src="Images/Meow.jpeg">
+            <img class="meow-img" src="Images/new-transparent-cat.png">
           </div>
           <div class="row2-c2">
             <button class="column1-text1 c">Contact Me</button>
@@ -155,6 +155,7 @@
             <div><img  class="logo1" src="Images/Tg.png" onclick="supportTab('tg')"><p class="logo-text">Telegram</p></div>
             <div><img  class="logo1" src="Images/Email.png" onclick="supportTab('gm')"><p class="logo-text a">Gmail</p></div>
           </div>
+          <div id="joke-box"  class="joke-box">Loading joke...</div>
         </div>
           </div>
           
@@ -191,6 +192,15 @@
           window.open("mailto:nilambarsonubehera@gmail.com?subject=Hello%20There!&body=I%20am%20from%20your%20portfolio%20website. ", "_blank");
         }
       }
+
+     fetch('https://official-joke-api.appspot.com/random_joke')
+    .then(res => res.json())
+    .then(data => {
+      document.getElementById('joke-box').innerText = `${data.setup} - ${data.punchline}`;
+    })
+    .catch(err => {
+      document.getElementById('joke-box').innerText = "Failed to fetch joke.";
+    });
        
     </script>
 
