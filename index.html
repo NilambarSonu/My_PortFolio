@@ -18,8 +18,8 @@
           <ul>
             <li><a class="corner a" href="#home">Home</a></li>
             <li><a class="corner a" href="#about">About</a></li>
-            <li><a class="corner" href="#projects">Projects</a></li>
-            <li><a class="corner" href="#contact">Contact</a></li>
+            <li><a class="corner " href="#projects">Projects</a></li>
+            <li><a class="corner " href="#contact">Contact</a></li>
           </ul>
         </nav>
         <div class="description">
@@ -44,7 +44,7 @@
               I am a BCA student with a passion for data science and web development. I have completed certifications like "Python for Data Science and AI" by IBM, which has equipped me with the skills to analyze data and build web applications. I enjoy working on real-world projects using Python, HTML, CSS, and JavaScript. My goal is to become a data scientist in the future, and I am continuously learning and improving my skills to achieve that.
             </p>
             <div class="tabs">
-              <button class="tab-links active-link" onclick="openTab('skills')">Skills</button>
+              <button class="tab-links" onclick="openTab('skills')">Skills</button>
               <button class="tab-links a" onclick="openTab('experience')">Experience</button>
               <button class="tab-links a" onclick="openTab('education')">Education</button>
             </div>
@@ -130,7 +130,6 @@
                 <p class="text4-1">* Rock-Paper-Scissor_Game</p>
                 <p class="text4-1">* Coin-Flip(Head-Tail)</p>
                 <p class="text4-1">* Data Harvesting </p>
-
               </li>
             </ul>
             <div class="warning">*this projects are not commited to github page</div>
@@ -142,23 +141,26 @@
 
     <div id="contact">
       <div id="container">
-        <div class="row2">
-          <div class="row2-c1">
-            <img class="meow-img" src="Images/new-transparent-cat.png">
+        <div class="rows">
+          <div class="img-column">
+            <img class="mekasa" src="Images/Mikasa.png">
           </div>
-          <div class="row2-c2">
-            <button class="column1-text1 c">Contact Me</button>
-            <div class="logo-align">
-              <div><img  class="logo1" src="Images/Wp.png" onclick="supportTab('wp')">
-                <p class="logo-text">WhatsApp</p>
+          <div class="contact-column">
+            <h1 class="contact">Contact Me</h1>
+            <div class="contact-box">
+              <p class="text5-1">Feel free to reach out to me through any of the following platforms:</p>
+              <div class="contact-links">
+                <img class="contact-icon" onclick="supportTab('wp')" src="Images/Wp.png">
+                <img class="contact-icon" onclick="supportTab('tg')" src="Images/Tg.png">
+                <img class="contact-icon" onclick="supportTab('gmail')" src="Images/Email.png">
+                <button class="contact-button" onclick="supportTab('wp')">WhatsApp</button>
+                <button class="contact-button" onclick="supportTab('tg')">Telegram</button>
+                <button class="contact-button" onclick="supportTab('email')">Email</button>
+                <div id="joke-box" class="joke-box"></div>
               </div>
-            <div><img  class="logo1" src="Images/Tg.png" onclick="supportTab('tg')"><p class="logo-text">Telegram</p></div>
-            <div><img  class="logo1" src="Images/Email.png" onclick="supportTab('gm')"><p class="logo-text a">Gmail</p></div>
+            </div>
           </div>
-          <div id="joke-box"  class="joke-box">Loading joke...</div>
         </div>
-          </div>
-          
       </div>
     </div>
 
@@ -180,7 +182,6 @@
           document.querySelector(".active-tab1").style.display = "none";
         }
       }
-
       function supportTab(tabname) {
         if (tabname === "wp") {
           window.open("https://api.whatsapp.com/send/?phone=7205095602&text=Hello+There%21+I+Am+From+Your+Portfolio+Web&type=phone_number&app_absent=0 ", "_blank");
@@ -192,7 +193,6 @@
           window.open("mailto:nilambarsonubehera@gmail.com?subject=Hello%20There!&body=I%20am%20from%20your%20portfolio%20website. ", "_blank");
         }
       }
-
      fetch('https://official-joke-api.appspot.com/random_joke')
     .then(res => res.json())
     .then(data => {

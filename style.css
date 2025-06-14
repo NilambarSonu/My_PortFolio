@@ -20,10 +20,9 @@ body{
   width: 220px;
   border-radius: 30px;
   margin-top: 10px;
-  
 }
 .container{
-  padding: 0px 2%;
+  padding: 50px 2%;
 }
 nav{
   display: flex;
@@ -33,7 +32,7 @@ nav{
 }
 nav ul li{
   display: inline-block;
-  margin: 10px 10px;
+  margin: 5px 5px;
 }
 nav ul li a{
   color: white;
@@ -43,58 +42,31 @@ nav ul li a{
 }
 .corner{
   height: 30px;
-  width: 85px;
+  width: 80px;
   display: inline-block;
   border-radius: 20px;
   padding-right: 5px;
   font-size: 15px;
-  padding-top:7px;
+  padding-top: 07px;
   padding-left: 15px;
   border: none;
   background-color: rgba(176, 125, 49, 0.945);
-  
- 
 }
 .corner:hover{
   background-color: rgba(148, 139, 121, 0.444);
   color: black;
   transition: background-color 2s color 2s;
- 
-  
 }
 
 .corner.a{
   padding-left: 21px;
 }
-
-
-/*nav ul li:hover{
-  background-color: aqua;
-  transition: background-color 2s;
-}
-nav ul li a::after{
-  content: "";
-  display: block;
-  width: 0;
-  height: 4px;
-  background: white;
-  border-radius: 2px;
-  background: rgb(0, 255, 238);
-  transition: width .3s;
-  margin-top: 5px;
-
-}
-nav ul li a:hover::after{
-  width: 98%;
-}
-  */
 .description{
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   height: 200px;
-  
 }
 .text1{
   margin-top: 120px;
@@ -114,7 +86,7 @@ nav ul li a:hover::after{
   color: rgb(112, 52, 5);
   font-size: 20px;
   width: 480px;
-  margin-top:200px;
+  margin-top: 155px;
 }
 #about{
   padding: 50px 0;
@@ -141,8 +113,6 @@ nav ul li a:hover::after{
 .column2{
   padding-top: 200px;
   flex-basis: 60%;
-  
- 
 }
 .text3-1{
   margin-bottom: 10px;
@@ -156,7 +126,7 @@ nav ul li a:hover::after{
 }
 .tabs{
   display: flex;
-  margin: 20px 0 40px;
+  margin: 20px 15px 40px;
   justify-content: space-between;;
   align-items: center;
 }
@@ -168,13 +138,13 @@ nav ul li a:hover::after{
   font-weight: bold;
   border-radius: 20px;
   height: 30px;
-  width: 60px;
+  width: 85px;
   border: none;
   background-color: rgb(85, 87, 85);
   position: relative;
 }
 .tab-links.a{
-  width: 120px;
+  width: 150px;
 }
 .tab-links::after{
   content: "";
@@ -188,14 +158,10 @@ nav ul li a:hover::after{
   transition: width .3s;
   position: absolute;
 }
-.tab-links:hover::after{
-  
+.tab-links:hover::after{ 
   width: 100%;
 }
-
-
 .tab-content ul li{
-  
   color: rgb(85, 87, 85);
   margin-top:12px;
   font-size: 20px;
@@ -287,25 +253,22 @@ nav ul li a:hover::after{
   border-width: 2px;
   border-style: solid;
   font-size: 22px;
-  color: white;
   background-color: rgba(209, 14, 14, 0.847) ;
   border-radius: 35px;
   
 }
 .text4-2{
-  color:black;
+  color:rgb(0, 0, 0);
   text-decoration: none;
   font-weight: bold;
   padding: 10px;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .web-button.one{
   margin-top: 85px;
   width: 150px;
   margin-left: 75px;
-
-
 }
 .web-button.two{
   margin-top: 15px;
@@ -321,112 +284,179 @@ nav ul li a:hover::after{
 #contact{
   width: 100%;
   height: 100vh;
-  padding: 50px 0;
+  padding: 50px 0vh;
   background-image: url("Images/page-4.jpg");
   background-size: cover;
   background-position: center;
 }
-.row2{
+.container{
+  padding: 50px 2%;
+}
+.rows{
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
-  justify-content:space-between;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+.contact{
+  color: black;
+  font-size: 35px;
+  font-style:italic;
+  text-align: center;
+  margin-top: 15px;
+  
+}
+.img-column{
+  display: flex;
+  margin-right: 300px;
+}
+.contact-column{
+  background-color: rgba(140, 140, 140, 0.086);
+  height: 400px;
+  width: 600px;
+  border-radius: 18px;
+  margin-top: 10px;
+  margin-right: 50px;
+}
+.mekasa{
+  height: 500px;
+  width: 500px;
+}
+.contact-icon{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-top: 100px;
+  margin-left: 105px;
+  cursor: pointer;
 
 }
-.row2-c2{
-  flex-basis: 30%;
-  margin-right: 20px;
-  padding: 20px;
-  margin-top: 85px;
-  background: rgba(66, 54, 54, 0.088);
-  color:rgb(255, 255, 255);
-  height: 50vh;
-  border-radius: 50px;
-  width: 100%;
-  max-width: 800px;
-  justify-content: space-around;
-  justify-items: center;
+.text5-1{
+  margin-top: 40px;
+  font-size: 20px;
+  color: rgb(159, 88, 44);
+  margin-left: 5px;
 }
-.meow-img{
-  height: 600px;
-  border-radius: 40px;
-  margin-left: 100px;
-}
-.logo1{
-  height:50px;
-  width: 50px;
-  display: block;
-  margin: 80px;
-  border-radius: 50%;
+.contact-button{
+  height: 25px;
+  width: 100px;
+  margin-top: 10px;
+  margin-left: 78px;
+  border-radius: 10px;
+  border: none;
   cursor: pointer;
+  background-color: rgb(214, 152, 90);
+  color: rgb(0, 0, 0);
 }
-.logo-align{
-  justify-content: space-evenly;
-  display: flex;
-}
-.column1-text1.c{
-  width: 200px;
-  margin-left: 15px;
-  background-color: rgb(180, 136, 92);
-}
-.logo1.a{
-  text-decoration: none;
-  color: black;
-  padding-top: 0px;
-}
-.logo-text{
-  color: black;
-  margin-left: 68px;
-}
-.logo-text.a{
-  margin-left: 85px;
+.contact-button:hover{
+  background-color: rgb(169, 230, 94);
 }
 .joke-box{
   color: black;
-  margin-top: 100px;
-  font-size: 18px;
-  font-style: italic;
+  margin-top: 30px;
+  text-align: center;
 }
-
-
-/* --- FINAL Responsive Fixes --- */
-@media (max-width: 600px) {
-
-  body {
-    overflow-x: hidden;
+/*Phone Display overview*/
+@media only screen and (max-width: 600px) {
+  #header{
+    background-image: url("Images/page1.mobile.jpg");
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(214, 193, 174);
   }
-
+  .logo{
+    margin-left: 250px;
+  }
+  .contact-column{
+    height: auto;
+    width: 100%;
+    margin-left: 45px;
+  }
+  .contact-icon{
+    height: 40px;
+    width: 40px;
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+  .tab-links.a{
+    width: 105px;
+  }
+  .contact-button{
+    height: 20px;
+    width: 55px;
+    font-size: 10px;
+    margin-left: 30px;
+    margin-bottom: 5px;
+  }
+  .contact{
+    margin-top: 2px;
+  }
+  .text5-1{
+    font-size: 15px;
+    margin-top: 0px;
+  }
+  .joke-box{
+    font-size: 15px;
+    margin-left: 15px;
+    margin-top: 0px;
+  }
+  body {
+    overflow-x: hisdden;
+  }
+  .mekasa{
+    height: 400px;;
+    width: 400px;
+  }
+  .img-column{
+    margin-right: 0px;
+  }
   .text1,
   .text2 {
     width: 100%;
     font-size: 20px;
     text-align: center;
-    margin: 20px 0;
+    margin: 20px 0; 
   }
-
+  .row1{
+    margin: 0;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  .row1-column.one,
+  .row1-column.two,
+  .row1-column.three{
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    margin-left: 15px;
+    margin-top: 148px;
+  }
+  .text4-2{
+    padding-left: 85px;
+  }
   .text2 {
     margin-left: 0;
   }
-
   .projects {
     margin-left: 0;
     margin-right: 0;
     padding: 0 10px;
     text-align: center;
   }
-
   .row1-column {
     width: 90%;
     height: auto;
     margin: 20px auto;
   }
-
   .web-button.one,
   .web-button.two {
     width: 80%;
     margin: 20px auto;
     display: block;
   }
-
   .meow-img {
     width: 100%;
     max-width: 350px;
@@ -436,7 +466,6 @@ nav ul li a:hover::after{
     margin-right: auto;
     margin-top: 20px;
   }
-
   .row2-c2 {
     width: 100%;
     padding: 20px;
@@ -446,19 +475,16 @@ nav ul li a:hover::after{
     box-sizing: border-box;
     overflow-x: auto;
   }
-
   .description {
     flex-direction: column;
     height: auto;
     padding: 20px;
   }
-
   .column1,
   .column2 {
     width: 100%;
     padding-top: 20px;
   }
-
   .column1 img {
     width: 100%;
     height: auto;
@@ -467,26 +493,27 @@ nav ul li a:hover::after{
     display: block;
     margin: 0 auto;
   }
-
   .tab-content {
     width: 100%;
   }
-
+  .text1-1{
+    color: rgb(162, 94, 23);
+  }
   .logo-align {
     flex-direction: column;
     align-items: center;
   }
-
   .logo1 {
     margin: 20px;
   }
-
   .logo-text,
   .logo-text.a {
     margin-left: 0;
     text-align: center;
   }
-
+  .edu-text{
+    font-size: 15px;
+  }
   .joke-box {
     margin: 40px auto;
     text-align: center;
